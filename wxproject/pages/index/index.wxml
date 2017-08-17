@@ -1,0 +1,73 @@
+<!--index.wxml-->
+<view class="page ">
+  <view  class="userinfo">
+    <image class="userinfo-avatar" background-size="cover" src="../../style/images/li-mini.png"></image>
+    <text class="userinfo-nickname">{{text}}</text>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">年龄</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入年龄" bindinput="setAge" type="number" maxlength="2"/>
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">年收入</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入年收入" bindinput="setIncome" type="number"/>
+      </view>
+      <view>
+        <view class="weui-label">万元</view>
+      </view>
+    </view>
+    
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">占家庭收入</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="收入占比" bindinput="setRatio" type="number" maxlength="3" value="{{ratio*100}}"/>
+      </view>
+      <view>
+        <view class="weui-label">%</view>
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">总负债</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="总负债（贷款）" bindinput="setDebt" type="number"/>
+      </view>
+      <view>
+        <view class="weui-label">万元</view>
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view >
+        <view class="weui-label">子女数</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" type="number" value="{{children}}" bindinput="setChildren"/>
+      </view>
+      <view >
+        <view class="weui-label">父母数</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" type="number" value="{{parents}}" bindinput="setParents"/>
+      </view>
+    </view>
+
+  </view>
+  <view class="button-sp-area">
+    <button class="weui-btn" type="primary" bindtap="bindViewTap"> 揭晓答案 </button>
+  </view>
+</view>

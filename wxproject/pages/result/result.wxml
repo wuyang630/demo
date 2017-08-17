@@ -1,0 +1,45 @@
+<!--result.wxml-->
+<view class="page">
+  <view class="weui-panel">
+    <view class="weui-panel__hd"> 保险组合建议
+    </view>
+    <view class="weui-panel__bd">
+      <navigator url="" class="weui-media-box weui-media-box_appmsg">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src='../../style/images/icon_nav_widget.png' />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">重疾险</view>
+          <view class="weui-media-box__desc">重疾越来越不可怕，可怕的是医疗费用，及患重疾后失去的收入。
+
+</view>
+          <view class="weui-media-box__desc">{{result.heavy}}万元</view>
+        </view>
+      </navigator>
+      <view class="weui-panel__bd">
+        <navigator url="" class="weui-media-box weui-media-box_appmsg">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src='../../style/images/icon_nav_widget.png' />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">寿险</view>
+          <view class="weui-media-box__desc">这一险种比较适合在家庭中是主要经济来源的家庭成员，用来弥补他身故后造成家庭收入大幅减少的创伤，保证家人的正常生活。</view>
+            <view class="weui-media-box__desc">{{result.life}}万元</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="weui-panel__bd">
+        <navigator url="" class="weui-media-box weui-media-box_appmsg">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src='../../style/images/icon_nav_widget.png' />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">意外险</view>
+          <view class="weui-media-box__desc">谁也不知道意外和明天哪个先来</view>
+            <view class="weui-media-box__desc">{{result.accident}}万元</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    </view>
+</view>

@@ -1,0 +1,40 @@
+/**index.wxss**/
+
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  /* width: 256rpx; */
+   /* height: 256rpx;  */
+  margin: 20rpx;
+   border-radius: 50%; 
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  padding: 0rpx 50rpx;
+}
+
+.usermotto {
+  margin: 20rpx 0;
+  display: flex;
+}
+
+.usermotto .weui-button {
+  flex: 1;
+}
+
+.weui-cells_after-title {
+  margin-top: 100rpx;
+  margin-bottom: 20rpx;
+}
+
+.button-sp-area{
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 60%;
+}
